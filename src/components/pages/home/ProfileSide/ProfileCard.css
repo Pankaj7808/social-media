@@ -1,0 +1,113 @@
+.ProfileCard{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    overflow-x: clip;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    background: var(--cardColor);
+}
+
+.ProfileImages{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfileImages>img:nth-of-type(1){
+    width: 100%;
+}
+
+.ProfileImages>img:nth-of-type(2)
+{
+    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3rem;
+    box-shadow: var(--profileShadow);
+}
+
+.ProfileName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+
+.ProfileName>span:nth-of-type(2)
+{
+    font-weight: bold;
+}
+
+/* Follow Status */
+.followStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  
+  .followStatus > hr {
+    width: 85%;
+    border: 1px solid var(--hrColor);
+  }
+  
+  .followStatus > div {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .follow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .follow > span:nth-of-type(1) {
+    font-weight: bold;
+  }
+  
+  .follow > a {
+    text-decoration: none;
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  .vl {
+    height: 150%;
+    border-left: 2px solid var(--hrColor);
+  }
+
+  
+.ProfileCard button{
+  margin: 0.5rem 0;
+  align-self: center;
+  width:85%;
+  padding: 5px 15px;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  color: var(--pureWhite);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.1s;
+}
+
+.ProfileCard button:hover{
+  color: var(--blue);
+  background-color: var(--pureWhite);
+  border-color: var(--blue);
+}

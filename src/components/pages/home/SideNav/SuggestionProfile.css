@@ -1,0 +1,64 @@
+.profile-image-container {
+  align-self: center;
+  width: 40px; 
+  height: 40px; 
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.suggestion-container{
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content:baseline;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-image-container {
+  align-self: center;
+}
+
+.profile-container a{
+  text-decoration: none;
+  color: var(--blueBlack);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+  align-self: center;
+}
+
+.profile-container p{
+  font-size: 14px;
+}
+
+
+.follow-btn {
+  align-self: center;
+  padding: 5px 15px;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  color: var(--pureWhite);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.1s;
+}
+
+.follow-btn:hover {
+  color: var(--blue);
+  background-color: var(--pureWhite);
+  border-color: var(--blue);
+}

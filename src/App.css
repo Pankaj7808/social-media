@@ -1,0 +1,41 @@
+:root{
+  --pureWhite:#fff;
+  --blue:rgb(0, 132, 247);
+  --inputColor: Orgba(40, 52, 62, 0.07);
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --hrColor: rgb(205, 210, 215);
+  --blueBlack:rgb(11, 27, 40);
+
+  --black:#242d49;
+  --gray:rgba(36,45,73,0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  
+  
+  --buttonBg: #E1AE4A;
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: EF5757;
+  --shedule: #E1AE4A;
+}
+
+.text-light-gray{
+  color:#26282a
+}
+
+.text-blue {
+  color: rgb(0, 132, 247);
+}
+
+.text-white{
+  color:#fff;
+}
+
+
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+    background-color: rgba(0, 132, 247, 0.089);
+    filter: blur(75px);
+}
