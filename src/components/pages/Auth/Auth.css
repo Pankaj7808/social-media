@@ -1,91 +1,68 @@
-.Auth {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    gap: 4rem;
-    position: relative;
-  }
-  
-  .Auth > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  
-  /* left side */
-  .a-left{
-      gap: 2rem;
-  }
-  
-  .a-left > img {
-    width: 4rem;
-    height: 4rem;
-  }
-  
-  .Webname > h1 {
-      font-size: 3rem;
-      /* background-color: red; */
-    color:var(--blue);
-      /* Create the gradient. */
-      /* background-image: var(--buttonBg); */
-      
-      /* Set the background size and repeat properties. */
-      background-size: 100%;
-      background-repeat: repeat;
-    
-      /* -webkit-text-fill-color: transparent;  */
-      /* -moz-background-clip: text; */
-      /* -moz-text-fill-color: transparent; */
-  }
-  
-  .Webname>h6{
-      font-size: 0.85rem;
-  }
+.Auth-Container{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color: var(--pureWhite);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding:2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+h1{
+  color:var(--blue);
+  text-align: center;
+}
+
+.Auth-Container form{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.Auth-Container form div{
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap:1rem;
+  width:6rem;
+}
+
+.Auth-Container input {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--black);
+  padding: 10px;
+  background-color: #f3f3f3;
+  width: 23rem;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition for smoother effect */
+}
+
+.Auth-Container input:focus {
+  border-color: var(--blue); 
+  box-shadow: 0 0 5px var(--blue);
+}
 
 
+.Auth-Container span{
+  font-size: 14px;
+}
 
-  .infoForm{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  .infoInput{
-    border: none;
-    outline: none;
-    background-color: var(--inputColor);
-    border-radius: 8px;
-    padding: 20px;
-    flex:1;
-  }
-  
-  .infoForm>div{
-    display: flex;
-    gap: 1rem;
-    height: 2rem;
-    width: 90%;
-  }
-  
-  .infoButton{
-    width: 6rem;
-    height: 2rem;
-    align-self: flex-end;
-  }
-  
-  
-  .authForm{
-      background-color: var(--cardColor);
-      border-radius: 1rem;
-      padding: 1rem;
-  }
-  
-  .authForm>div{
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-  }
+.Auth-Container button{
+  align-self: center;
+  width:24.5rem;
+  padding: 10px;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  color: var(--pureWhite);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.1s;
+}
+
+.Auth-Container button:nth-of-type(2){
+  background-color: red;
+  border: 2px solid red;
+}
