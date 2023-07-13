@@ -3,7 +3,7 @@
     background-color: var(--pureWhite);
     border-radius: 5px;
     margin-top: 2rem;
-    width:550px;
+    width:90%;
 }
 
 .post-profile-container{
@@ -13,9 +13,12 @@
     align-items: center;
 }
 
+
+
+
 .post-image{
     /* border-radius: 5px; */
-    height: 20rem;
+    /* height: 25rem; */
     
     overflow: hidden;
     box-shadow: 0 0 8px 0 rgb(0 0 0 0.2);

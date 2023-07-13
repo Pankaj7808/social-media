@@ -1,13 +1,7 @@
 .container{
     margin-top: 0rem;
     display: grid;
-    grid-template-columns: 21rem auto 22rem;
+    grid-template-columns: 1fr 1.5fr 1fr;
     justify-content: space-between;
     padding-top: 7vh;
-}
-
-.side-nav{
-    position: relative;
-    height: 93vh;
-    border-right: 1px solid var(--hrColor);
 }
